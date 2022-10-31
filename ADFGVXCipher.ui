@@ -1,0 +1,2218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>970</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(54, 54, 54);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="layout_main">
+      <item>
+       <widget class="QLabel" name="label_title">
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(230, 230, 230);</string>
+        </property>
+        <property name="text">
+         <string>ADFG(V)X Cipher</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="line_top">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 230, 230);</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="layout_matrix">
+          <item>
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(50, 50, 50);</string>
+            </property>
+            <property name="tabPosition">
+             <enum>QTabWidget::North</enum>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="elideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <property name="documentMode">
+             <bool>true</bool>
+            </property>
+            <property name="tabsClosable">
+             <bool>false</bool>
+            </property>
+            <property name="movable">
+             <bool>false</bool>
+            </property>
+            <property name="tabBarAutoHide">
+             <bool>false</bool>
+            </property>
+            <widget class="QWidget" name="tab_adfgx">
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <attribute name="title">
+              <string>ADFGX</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <widget class="QFrame" name="frame_languages">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QLabel" name="label_language">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);</string>
+                   </property>
+                   <property name="text">
+                    <string>Language</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_2">
+                   <property name="styleSheet">
+                    <string notr="true">
+background-color: rgb(70, 70, 70);</string>
+                   </property>
+                   <layout class="QHBoxLayout" name="layout_languages">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetMaximumSize</enum>
+                    </property>
+                    <property name="topMargin">
+                     <number>1</number>
+                    </property>
+                    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QRadioButton" name="english_radio">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>15</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(230, 230, 230);</string>
+                      </property>
+                      <property name="text">
+                       <string>English</string>
+                      </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                     <widget class="QRadioButton" name="czech_radio">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>15</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(230, 230, 230);</string>
+                      </property>
+                      <property name="text">
+                       <string>Czech</string>
+                      </property>
+                      <property name="checked">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_table_adfgx">
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_cipher_table_adfgx">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);</string>
+                   </property>
+                   <property name="text">
+                    <string>Cipher table</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_matrix_generation_adfgx">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>170</height>
+                    </size>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <item>
+                     <widget class="QLineEdit" name="matrix_input_adfgx">
+                      <property name="font">
+                       <font>
+                        <pointsize>15</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);
+border: none;</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="maxLength">
+                       <number>25</number>
+                      </property>
+                      <property name="clearButtonEnabled">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="button_input_matrix_adfgx">
+                      <property name="font">
+                       <font>
+                        <pointsize>18</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                      </property>
+                      <property name="text">
+                       <string>Input data above into matrix</string>
+                      </property>
+                      <property name="default">
+                       <bool>false</bool>
+                      </property>
+                      <property name="flat">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_matrix_adfgx_or">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>20</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(230, 230, 230);</string>
+                      </property>
+                      <property name="text">
+                       <string>or</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="button_generate_matrix_adfgx">
+                      <property name="font">
+                       <font>
+                        <pointsize>18</pointsize>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                      </property>
+                      <property name="text">
+                       <string>Generate random matrix</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="layout_table_adfgx">
+                   <item>
+                    <layout class="QHBoxLayout" name="table_line_desc_adfgx">
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>5</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_empty">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_col_a">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>A</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_col_d">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>D</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_col_f">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>F</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_col_g">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>G</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_col_x">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>X</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="table_line_1_adfgx">
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>5</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_row_a">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>A</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_11_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_12_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_13_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_14_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_15_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="table_line_2_adfgx">
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>5</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_row_d">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>D</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_21_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_22_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_23_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_24_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_25_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="table_line_3_adfgx">
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>5</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_row_f">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>F</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_31_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_32_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_33_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_34_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_35_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="table_line_4_adfgx">
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>5</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_row_g">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>G</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_41_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_42_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_43_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_44_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_45_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="table_line_5_adfgx">
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>5</number>
+                     </property>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_desc_adfgx_row_x">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>X</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_51_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_52_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_53_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_54_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                      <widget class="QLabel" name="table_item_55_adfgx">
+                       <property name="font">
+                        <font>
+                         <pointsize>15</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(230, 230, 230);</string>
+                       </property>
+                       <property name="text">
+                        <string>-</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_adfgvx">
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <attribute name="title">
+              <string>ADFGVX</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_cipher_table_adfgvx">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);</string>
+                </property>
+                <property name="text">
+                 <string>Cipher table</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <layout class="QVBoxLayout" name="layout_table_adfgvx">
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_desc_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_empty">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_col_a">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>A</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_col_d">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>D</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_col_f">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_col_g">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>G</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_col_v_2">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>V</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_col_x">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>X</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_1_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_row_a">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>A</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_11_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_12_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_13_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_14_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_15_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_16_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_2_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_row_d">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>D</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_21_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_22_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_23_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_24_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_25_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_26_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_3_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_row_f">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>F</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_31_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_32_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_33_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_34_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_35_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_36_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_4_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_row_g">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>G</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_41_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_42_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_43_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_44_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_45_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_46_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_5_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_row_v">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>V</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_51_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_52_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_53_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_54_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_55_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_56_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="table_line_6_adfgvx">
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_desc_adfgvx_row_x">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>X</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_61_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_62_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_63_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_64_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_65_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                   <widget class="QLabel" name="table_item_66_adfgvx">
+                    <property name="font">
+                     <font>
+                      <pointsize>15</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(230, 230, 230);</string>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_matrix_generation_adfgvx">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>175</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QLineEdit" name="matrix_input_adfgvx">
+                   <property name="font">
+                    <font>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);
+border: none;</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="maxLength">
+                    <number>36</number>
+                   </property>
+                   <property name="clearButtonEnabled">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="button_input_matrix_adfgvx">
+                   <property name="font">
+                    <font>
+                     <pointsize>18</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                   </property>
+                   <property name="text">
+                    <string>Input data above into matrix</string>
+                   </property>
+                   <property name="default">
+                    <bool>false</bool>
+                   </property>
+                   <property name="flat">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_matrix_adfgvx_or">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>20</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);</string>
+                   </property>
+                   <property name="text">
+                    <string>or</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="button_generate_matrix_adfgvx">
+                   <property name="font">
+                    <font>
+                     <pointsize>18</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                   </property>
+                   <property name="text">
+                    <string>Generate random matrix</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_copy_matrix">
+            <property name="font">
+             <font>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Copy matrix data</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Maximum</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>30</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QFrame" name="verticalFrame_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(50, 50, 50);</string>
+          </property>
+          <layout class="QVBoxLayout" name="layout_sub_right">
+           <item>
+            <widget class="QFrame" name="frame_keyword">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_keyword">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);</string>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+                <property name="text">
+                 <string>Keyword</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="keyword">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);
+border: none;</string>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_operations">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>120</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_operation">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);</string>
+                </property>
+                <property name="text">
+                 <string>Operation</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame">
+                <property name="styleSheet">
+                 <string notr="true">
+background-color: rgb(70, 70, 70);</string>
+                </property>
+                <layout class="QHBoxLayout" name="layout_operations">
+                 <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                  <widget class="QRadioButton" name="encrypt_radio">
+                   <property name="font">
+                    <font>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);</string>
+                   </property>
+                   <property name="text">
+                    <string>Encrypt</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                  <widget class="QRadioButton" name="decrypt_radio">
+                   <property name="font">
+                    <font>
+                     <pointsize>15</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(230, 230, 230);</string>
+                   </property>
+                   <property name="text">
+                    <string>Decrypt</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_input_data">
+             <layout class="QVBoxLayout" name="groupBox_input">
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_text">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);</string>
+                </property>
+                <property name="text">
+                 <string>Input</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="input_field">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="undoRedoEnabled">
+                 <bool>true</bool>
+                </property>
+                <property name="plainText">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="button_execute">
+                <property name="font">
+                 <font>
+                  <pointsize>18</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                </property>
+                <property name="text">
+                 <string>Execute</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_output">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_result">
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);</string>
+                </property>
+                <property name="text">
+                 <string>Output</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="output_field">
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+                <property name="plainText">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="button_copy_output">
+                <property name="font">
+                 <font>
+                  <pointsize>18</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(70, 70, 70);</string>
+                </property>
+                <property name="text">
+                 <string>Copy output</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>970</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
